@@ -16,5 +16,6 @@
         "PYTHONHOME": "C:\\Program Files\\MySQL\\MySQL Workbench 8.0\\swb\\shell\\lib\\Python3.13",
         "PYTHONPATH": "${workspaceFolder}",
         "PATH": "C:\\Users\\User\\AppData\\Local\\Programs\\Git\\cmd;${env:PATH}"
-    }
+    },
+    "python-envs.defaultEnvManager": "ms-python.python:system"
 }
