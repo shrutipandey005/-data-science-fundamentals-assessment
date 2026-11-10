@@ -1,8 +1,10 @@
 {
+    "git.enabled": true,
+    "git.path": "C:\\Users\\User\\AppData\\Local\\Programs\\Git\\cmd\\git.exe",
     "python.defaultInterpreterPath": "C:\\Program Files\\MySQL\\MySQL Workbench 8.0\\swb\\shell\\lib\\Python3.13\\python.exe",
     "python.envFile": "${workspaceFolder}/.env",
     "files.exclude": {
-        "**/.git": true,
+        "**/.git": false,
         "**/.svn": true,
         "**/.hg": true,
         "**/CVS": true,
@@ -12,6 +14,7 @@
     },
     "terminal.integrated.env.windows": {
         "PYTHONHOME": "C:\\Program Files\\MySQL\\MySQL Workbench 8.0\\swb\\shell\\lib\\Python3.13",
-        "PYTHONPATH": "${workspaceFolder}"
+        "PYTHONPATH": "${workspaceFolder}",
+        "PATH": "C:\\Users\\User\\AppData\\Local\\Programs\\Git\\cmd;${env:PATH}"
     }
 }
