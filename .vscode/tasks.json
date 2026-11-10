@@ -1,0 +1,33 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Full Assessment Suite",
+            "type": "shell",
+            "command": "powershell -ExecutionPolicy Bypass -File .\\run_project.ps1",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Unit Tests",
+            "type": "shell",
+            "command": "powershell -ExecutionPolicy Bypass -Command \"$env:PYTHONHOME='C:\\Program Files\\MySQL\\MySQL Workbench 8.0\\swb\\shell\\lib\\Python3.13'; $env:PYTHONPATH=''; & 'C:\\Program Files\\MySQL\\MySQL Workbench 8.0\\swb\\shell\\lib\\Python3.13\\python.exe' src/test_fundamentals.py\"",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "1. Run Full Assessment",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/fundamentals_assessment.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "2. Run Unit Tests (9 Tests)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/test_fundamentals.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "3. Run Unified Entrypoint (run.py)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/run.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

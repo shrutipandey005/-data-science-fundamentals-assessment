@@ -1,0 +1,65 @@
+[
+  {
+    "order_id": "ORD-2024-001",
+    "timestamp": "2024-03-15T09:30:00Z",
+    "customer": {
+      "id": "USR-401",
+      "tier": "Gold",
+      "city": "Austin"
+    },
+    "items": [
+      {"sku": "LAPTOP-01", "category": "Electronics", "unit_price": 999.99, "quantity": 1},
+      {"sku": "MOUSE-02", "category": "Accessories", "unit_price": 25.50, "quantity": 2}
+    ],
+    "discount_applied": 0.10,
+    "payment_method": "Credit Card",
+    "delivered": true
+  },
+  {
+    "order_id": "ORD-2024-002",
+    "timestamp": "2024-03-15T11:15:00Z",
+    "customer": {
+      "id": "USR-402",
+      "tier": "Silver",
+      "city": "Seattle"
+    },
+    "items": [
+      {"sku": "KEYBOARD-03", "category": "Accessories", "unit_price": 75.00, "quantity": 1}
+    ],
+    "discount_applied": 0.05,
+    "payment_method": "PayPal",
+    "delivered": true
+  },
+  {
+    "order_id": "ORD-2024-003",
+    "timestamp": "2024-03-16T14:45:00Z",
+    "customer": {
+      "id": "USR-403",
+      "tier": "Bronze",
+      "city": "Austin"
+    },
+    "items": [
+      {"sku": "MONITOR-04", "category": "Electronics", "unit_price": 249.50, "quantity": 2},
+      {"sku": "CABLE-05", "category": "Accessories", "unit_price": 12.00, "quantity": 3}
+    ],
+    "discount_applied": 0.00,
+    "payment_method": "Credit Card",
+    "delivered": false
+  },
+  {
+    "order_id": "ORD-2024-004",
+    "timestamp": "2024-03-17T16:20:00Z",
+    "customer": {
+      "id": "USR-404",
+      "tier": "Gold",
+      "city": "Boston"
+    },
+    "items": [
+      {"sku": "HEADPHONES-06", "category": "Audio", "unit_price": 180.00, "quantity": 1},
+      {"sku": "STAND-07", "category": "Accessories", "unit_price": 30.00, "quantity": 1}
+    ],
+    "discount_applied": 0.15,
+    "payment_method": "Debit Card",
+    "delivered": true
+  }
+]

@@ -1,0 +1,12 @@
+# Core Assessment Requirements:
+# The core assessment engine and unit test suite use pure Python standard libraries (zero required dependencies).
+
+# Optional packages for interactive Jupyter Notebook analysis and visualization:
+jupyter>=1.0.0
+notebook>=7.0.0
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+scipy>=1.11.0
+

@@ -1,0 +1,17 @@
+{
+    "python.defaultInterpreterPath": "C:\\Program Files\\MySQL\\MySQL Workbench 8.0\\swb\\shell\\lib\\Python3.13\\python.exe",
+    "python.envFile": "${workspaceFolder}/.env",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/__pycache__": false
+    },
+    "terminal.integrated.env.windows": {
+        "PYTHONHOME": "C:\\Program Files\\MySQL\\MySQL Workbench 8.0\\swb\\shell\\lib\\Python3.13",
+        "PYTHONPATH": "${workspaceFolder}"
+    }
+}
