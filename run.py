@@ -55,7 +55,9 @@ def main():
     # Step 3: Project Summary & Artifact Verification
     print_banner("STEP 3: ASSESSMENT DELIVERABLES VERIFICATION")
     artifacts = [
-        ("Structured Report", os.path.join(REPORTS_DIR, "Data_Science_Fundamentals_Report.md")),
+        ("Word DOCX Report", os.path.join(REPORTS_DIR, "Data_Science_Fundamentals_Report.docx")),
+        ("Word DOC Report", os.path.join(REPORTS_DIR, "Data_Science_Fundamentals_Report.doc")),
+        ("Markdown Report", os.path.join(REPORTS_DIR, "Data_Science_Fundamentals_Report.md")),
         ("Jupyter Notebook", os.path.join(NOTEBOOKS_DIR, "Data_Science_Fundamentals_Assessment.ipynb")),
         ("Customer Churn CSV", os.path.join(PROJECT_ROOT, "data", "customer_churn_analysis.csv")),
         ("E-Commerce Orders JSON", os.path.join(PROJECT_ROOT, "data", "ecommerce_orders.json")),

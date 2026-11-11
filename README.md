@@ -109,10 +109,13 @@ data_science_fundamentals_assessment/
 ├── notebooks/
 │   └── Data_Science_Fundamentals_Assessment.ipynb # Interactive Jupyter Notebook
 ├── reports/
-│   └── Data_Science_Fundamentals_Report.md   # Comprehensive theoretical & analytical report
+│   ├── Data_Science_Fundamentals_Report.docx # Formatted Microsoft Word (.docx) report for submission
+│   ├── Data_Science_Fundamentals_Report.doc  # Microsoft Word (.doc) formatted report
+│   └── Data_Science_Fundamentals_Report.md   # Comprehensive theoretical & analytical markdown report
 ├── src/
 │   ├── data_handler.py                       # Ingestion, validation, and schema classification
 │   ├── fundamentals_assessment.py            # Master assessment runner covering all 6 objectives
+│   ├── generate_docx_report.py               # Word .docx and .doc report generator
 │   ├── statistical_toolkit.py                # Pure Python statistical algorithms
 │   └── test_fundamentals.py                 # Self-contained unit test suite (9 test cases)
 ├── .gitignore                                # Standard Python and editor ignore rules

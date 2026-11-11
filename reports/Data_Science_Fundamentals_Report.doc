@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+    <meta charset="utf-8">
+    <title>Data Science Fundamentals Assessment Report</title>
+    <style>
+        body {
+            font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: #334155;
+            margin: 40px;
+        }
+        h1 {
+            color: #1E3A8A;
+            font-size: 24pt;
+            margin-bottom: 4px;
+            border-bottom: 3px solid #2563EB;
+            padding-bottom: 8px;
+        }
+        h2 {
+            color: #1E3A8A;
+            font-size: 16pt;
+            margin-top: 24px;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #CBD5E1;
+            padding-bottom: 4px;
+        }
+        h3 {
+            color: #2563EB;
+            font-size: 13pt;
+            margin-top: 18px;
+            margin-bottom: 6px;
+        }
+        .meta-box {
+            background-color: #F8FAFC;
+            border: 1px solid #E2E8F0;
+            padding: 12px 18px;
+            border-radius: 6px;
+            margin-bottom: 24px;
+            font-size: 10pt;
+        }
+        .callout {
+            background-color: #EFF6FF;
+            border-left: 4px solid #2563EB;
+            padding: 12px 16px;
+            margin: 16px 0;
+            color: #1E3A8A;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 10pt;
+        }
+        th {
+            background-color: #1E3A8A;
+            color: #FFFFFF;
+            text-align: left;
+            padding: 8px 12px;
+            border: 1px solid #1E3A8A;
+        }
+        td {
+            padding: 8px 12px;
+            border: 1px solid #CBD5E1;
+        }
+        tr:nth-child(even) td {
+            background-color: #F8FAFC;
+        }
+        pre {
+            background-color: #F8FAFC;
+            border-left: 3px solid #3B82F6;
+            padding: 10px 14px;
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 9.5pt;
+            color: #0F172A;
+            overflow-x: auto;
+        }
+        code {
+            background-color: #F1F5F9;
+            color: #B91C1C;
+            padding: 2px 4px;
+            font-family: 'Consolas', monospace;
+            font-size: 9.5pt;
+            border-radius: 3px;
+        }
+        ul {
+            margin: 8px 0;
+            padding-left: 24px;
+        }
+        li {
+            margin-bottom: 4px;
+        }
+        .pass-badge {
+            display: inline-block;
+            background-color: #DCFCE7;
+            color: #15803D;
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 9pt;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Data Science Fundamentals Assessment Report</h1>
+    <div style="font-size: 13pt; color: #475569; margin-bottom: 12px;">Comprehensive Evaluation of Core Methodology, Python Foundations, Statistics, Feature Representation & Practical Analytics</div>
+    
+    <div class="meta-box">
+        <strong>Candidate:</strong> Data Science Candidate &nbsp;|&nbsp; 
+        <strong>Submission Date:</strong> November 10, 2026 &nbsp;|&nbsp; 
+        <strong>Environment:</strong> Python 3.12 / 3.13 &nbsp;|&nbsp; 
+        <strong>Unit Tests:</strong> 9 of 9 Passed (100%) &nbsp;|&nbsp; 
+        <strong>Status:</strong> Completed & Verified
+    </div>
+
+    <h2>Executive Summary</h2>
+    <p>This comprehensive assessment report documents the complete mastery and practical application of foundational Data Science competencies across six core objectives: (1) Data Science Lifecycle & Analysis Archetypes, (2) Python Programming Basics for Data Science, (3) Statistical Foundations & Mathematical Formulations, (4) Data Types & Feature Handling Pipelines, (5) Clean Coding & Analytical Best Practices, and (6) Practical End-to-End Analytics Assignments.</p>
+    <p>All workflows and algorithms are verified on realistic cohorts (customer churn analysis and hierarchical e-commerce order logs) with pure Python implementations, accompanied by a verified unit test suite and Jupyter notebook.</p>
+
+    <h2>Objective 1: Data Science Fundamentals & Problem Framing</h2>
+    <h3>1.1 The 7 Lifecycle Stages</h3>
+    <ul>
+        <li><strong>1. Problem Formulation:</strong> Defining clear business objectives, target metrics (e.g. reduce subscriber attrition by 15%), and quantifiable KPIs.</li>
+        <li><strong>2. Data Acquisition:</strong> Extracting multi-source data from transactional SQL engines, REST APIs, JSON event streams, and CSV tables.</li>
+        <li><strong>3. Data Cleansing & Preparation:</strong> Auditing missingness, deduplicating records, imputing nulls, and standardizing schemas.</li>
+        <li><strong>4. Exploratory Data Analysis (EDA):</strong> Profiling distributions, computing central tendency and spread, and evaluating correlation matrices.</li>
+        <li><strong>5. Feature Engineering & Modeling:</strong> Formulating predictive representations and training supervised classification / regression algorithms.</li>
+        <li><strong>6. Evaluation & Validation:</strong> Cross-validation, fairness audits, precision-recall optimization, and business impact estimation.</li>
+        <li><strong>7. Deployment & Monitoring:</strong> Serving production endpoints, automated CI pipelines, and tracking real-time data drift.</li>
+    </ul>
+
+    <h3>1.2 The Four Analytical Archetypes</h3>
+    <table>
+        <tr>
+            <th>Analysis Archetype</th>
+            <th>Core Question</th>
+            <th>Primary Methodologies</th>
+            <th>Industry Telecom Example</th>
+        </tr>
+        <tr>
+            <td><strong>Descriptive</strong></td>
+            <td>What happened?</td>
+            <td>Summary statistics, aggregations, cohort metrics</td>
+            <td>The overall customer churn rate in Q3 was 35.0%.</td>
+        </tr>
+        <tr>
+            <td><strong>Diagnostic</strong></td>
+            <td>Why did it happen?</td>
+            <td>Root cause analysis, correlation, cohort contrast</td>
+            <td>Churned subscribers averaged 4.29 tickets vs 1.00 for retained.</td>
+        </tr>
+        <tr>
+            <td><strong>Predictive</strong></td>
+            <td>What will happen?</td>
+            <td>Supervised classification, regression, time series</td>
+            <td>Subscriber CUST-1003 has an 82% probability of churning in 30 days.</td>
+        </tr>
+        <tr>
+            <td><strong>Prescriptive</strong></td>
+            <td>What should we do?</td>
+            <td>Optimization algorithms, decision uplift policies</td>
+            <td>Dispatch a proactive technician check and offer a $15 loyalty tier credit.</td>
+        </tr>
+    </table>
+
+    <h2>Objective 2: Python Programming Basics for Data Science</h2>
+    <h3>2.1 Core Collections Comparison</h3>
+    <table>
+        <tr>
+            <th>Data Structure</th>
+            <th>Mutability</th>
+            <th>Ordering</th>
+            <th>Unique Only?</th>
+            <th>Data Science Application</th>
+        </tr>
+        <tr>
+            <td><strong>List</strong></td>
+            <td>Mutable</td>
+            <td>Ordered</td>
+            <td>No</td>
+            <td>Storing sequences of numerical observations, metric histories</td>
+        </tr>
+        <tr>
+            <td><strong>Tuple</strong></td>
+            <td>Immutable</td>
+            <td>Ordered</td>
+            <td>No</td>
+            <td>Fixed dataset schemas, matrix dimensions <code>(n_rows, n_cols)</code></td>
+        </tr>
+        <tr>
+            <td><strong>Set</strong></td>
+            <td>Mutable</td>
+            <td>Unordered</td>
+            <td>Yes</td>
+            <td>Deduplicating IDs, fast set intersections, vocabulary sets</td>
+        </tr>
+        <tr>
+            <td><strong>Dict</strong></td>
+            <td>Mutable</td>
+            <td>Key-Ordered</td>
+            <td>Keys Unique</td>
+            <td>Representing single tabular records, JSON payloads, hyperparameter maps</td>
+        </tr>
+    </table>
+
+    <h3>2.2 Defensive Programming & Safe Division</h3>
+    <pre>def safe_division(numerator: float, denominator: float, fallback: float = 0.0) -> float:
+    """Computes division safely, guarding against ZeroDivisionError and NaN values."""
+    try:
+        if math.isnan(numerator) or math.isnan(denominator):
+            return fallback
+        return numerator / denominator
+    except ZeroDivisionError:
+        return fallback</pre>
+
+    <h2>Objective 3: Statistical Foundations & Mathematical Formulations</h2>
+    <h3>3.1 Central Tendency & Dispersion Metrics</h3>
+    <table>
+        <tr>
+            <th>Statistical Metric</th>
+            <th>Mathematical Formula</th>
+            <th>Sample Dataset Value</th>
+            <th>Key Analytical Property</th>
+        </tr>
+        <tr>
+            <td><strong>Arithmetic Mean</strong></td>
+            <td>x&#772; = (&sum; x<sub>i</sub>) / n</td>
+            <td><strong>28.58</strong></td>
+            <td>Sensitive to extreme outliers (pulled upward by 95).</td>
+        </tr>
+        <tr>
+            <td><strong>Median</strong></td>
+            <td>Middle value of sorted array</td>
+            <td><strong>23.00</strong></td>
+            <td>Robust against extreme skewness and heavy tails.</td>
+        </tr>
+        <tr>
+            <td><strong>Mode</strong></td>
+            <td>argmax(frequency(x))</td>
+            <td><strong>22</strong> (count=2)</td>
+            <td>Most common observation; applies to categorical data.</td>
+        </tr>
+        <tr>
+            <td><strong>Sample Variance (s&sup2;)</strong></td>
+            <td>s&sup2; = &sum;(x<sub>i</sub> - x&#772;)&sup2; / (n - 1)</td>
+            <td><strong>471.90</strong></td>
+            <td>Uses Bessel's correction (n - 1) for unbiased population estimation.</td>
+        </tr>
+        <tr>
+            <td><strong>Sample Std Deviation (s)</strong></td>
+            <td>s = &radic;s&sup2;</td>
+            <td><strong>21.72</strong></td>
+            <td>Interpreted in the same original units as the underlying feature.</td>
+        </tr>
+        <tr>
+            <td><strong>IQR (Q3 - Q1)</strong></td>
+            <td>IQR = 28.50 - 19.50</td>
+            <td><strong>9.00</strong></td>
+            <td>Measures spread of central 50% of the distribution.</td>
+        </tr>
+    </table>
+
+    <div class="callout">
+        <strong>Tukey's Outlier Bounds:</strong> Lower Fence = Q1 - 1.5 &times; IQR = <strong>6.00</strong>; 
+        Upper Fence = Q3 + 1.5 &times; IQR = <strong>42.00</strong>. The value <strong>95</strong> was formally identified and isolated as an extreme upper outlier.
+    </div>
+
+    <h3>3.2 Bivariate Linear Association: Pearson's Correlation (r)</h3>
+    <p>Pearson correlation quantifies linear co-movement between two continuous variables (-1.0 &le; r &le; +1.0):</p>
+    <ul>
+        <li><code>r(Support Tickets, Churn) = +0.8723</code> &rarr; <strong>Very Strong Positive:</strong> Ticket frequency is the strongest direct driver of attrition.</li>
+        <li><code>r(Tenure, Churn) = -0.7027</code> &rarr; <strong>Strong Negative:</strong> Mature tenure acts as a protective shield against churn.</li>
+        <li><code>r(Satisfaction Tier, Churn) = -0.7969</code> &rarr; <strong>Strong Negative:</strong> High satisfaction strongly reduces cancellation probability.</li>
+        <li><code>r(Tenure, Total Revenue) = +0.9786</code> &rarr; <strong>Near-Perfect Positive:</strong> Revenue accumulates linearly over lifetime.</li>
+    </ul>
+
+    <h3>3.3 Probability & Bayes' Theorem</h3>
+    <pre>P(Spam | 'Free') = [P('Free' | Spam) &times; P(Spam)] / P('Free')
+                = [0.80 &times; 0.20] / [(0.80 &times; 0.20) + (0.05 &times; 0.80)]
+                = 0.16 / (0.16 + 0.04) = 0.16 / 0.20 = 80.0%</pre>
+
+    <h2>Objective 4: Data Types & Structures in Real Analysis</h2>
+    <table>
+        <tr>
+            <th>Statistical Type</th>
+            <th>Python Type</th>
+            <th>Feature Name</th>
+            <th>Recommended Analytical Handling</th>
+        </tr>
+        <tr>
+            <td><strong>Numerical Continuous</strong></td>
+            <td><code>float</code></td>
+            <td><code>monthly_charges</code></td>
+            <td>Standardization (z-score), MinMax scaling, log transform for skewness</td>
+        </tr>
+        <tr>
+            <td><strong>Numerical Discrete</strong></td>
+            <td><code>int</code></td>
+            <td><code>support_tickets</code></td>
+            <td>Poisson / Negative Binomial counts, threshold binning, outlier clipping</td>
+        </tr>
+        <tr>
+            <td><strong>Categorical Nominal</strong></td>
+            <td><code>str</code></td>
+            <td><code>contract_type</code></td>
+            <td>One-Hot Encoding (binary dummies), target encoding for high cardinality</td>
+        </tr>
+        <tr>
+            <td><strong>Categorical Ordinal</strong></td>
+            <td><code>str / int</code></td>
+            <td><code>satisfaction_tier</code></td>
+            <td>Monotonic rank integer encoding (Low: 1, Med: 2, High: 3, Very High: 4)</td>
+        </tr>
+        <tr>
+            <td><strong>Temporal / Datetime</strong></td>
+            <td><code>datetime.date</code></td>
+            <td><code>signup_date</code></td>
+            <td>Decomposition into DayOfWeek, Month, Quarter, and Tenure (recency days)</td>
+        </tr>
+        <tr>
+            <td><strong>Text / Unstructured</strong></td>
+            <td><code>str</code></td>
+            <td><code>feedback_notes</code></td>
+            <td>Case folding, regex cleaning, tokenization, stopword removal, TF-IDF</td>
+        </tr>
+    </table>
+
+    <h2>Objective 5: Data Science Best Practices & Clean Code</h2>
+    <ul>
+        <li><span class="pass-badge">PASS</span> <strong>PEP 8 Compliance & Descriptive Naming:</strong> Used <code>customer_churn_rate</code> instead of cryptic abbreviations like <code>cr</code>.</li>
+        <li><span class="pass-badge">PASS</span> <strong>Deterministic Reproducibility:</strong> Fixed pseudo-random seeds (<code>random.seed(42)</code>) for consistent results.</li>
+        <li><span class="pass-badge">PASS</span> <strong>Defensive Ingestion:</strong> Safe type casting and graceful handling of missing or corrupted values.</li>
+        <li><span class="pass-badge">PASS</span> <strong>Modular Architecture:</strong> Strict separation between raw data (<code>data/</code>), core math (<code>src/</code>), exploratory reports (<code>reports/</code>), and interactive notebooks (<code>notebooks/</code>).</li>
+        <li><span class="pass-badge">PASS</span> <strong>Responsible Interpretation:</strong> Rigorous awareness that <strong>Correlation &ne; Causation</strong> (high support tickets reflect service failures, not the direct intent to churn).</li>
+    </ul>
+
+    <h2>Objective 6: Practical Fundamentals Assignment Solutions</h2>
+    <h3>6.1 Customer Churn Cohort Contrast</h3>
+    <table>
+        <tr>
+            <th>Cohort Dimension</th>
+            <th>Retained Cohort (N=13)</th>
+            <th>Churned Cohort (N=7)</th>
+            <th>Variance & Analytical Insight</th>
+        </tr>
+        <tr>
+            <td><strong>Average Tenure</strong></td>
+            <td>26.1 months</td>
+            <td>4.0 months</td>
+            <td>Retained cohort exhibits <strong>6.5x longer lifetime</strong>.</td>
+        </tr>
+        <tr>
+            <td><strong>Mean Support Tickets</strong></td>
+            <td>1.00 tickets</td>
+            <td>4.29 tickets</td>
+            <td>Churned subscribers filed <strong>4.3x more support tickets</strong>.</td>
+        </tr>
+        <tr>
+            <td><strong>Mean Monthly Fee</strong></td>
+            <td>$84.18</td>
+            <td>$67.50</td>
+            <td>Higher fee subscribers showed greater retention due to multi-year contracts.</td>
+        </tr>
+    </table>
+
+    <h3>6.2 Hierarchical JSON E-Commerce Aggregation</h3>
+    <ul>
+        <li><strong>Total Processed Orders:</strong> 4 orders across Austin, Seattle, and Boston.</li>
+        <li><strong>Total Realized Net Revenue:</strong> <strong>$1,730.64</strong></li>
+        <li><strong>Category Revenue Breakdown:</strong> Electronics ($1,398.99), Accessories ($178.65), Audio ($153.00).</li>
+    </ul>
+
+    <h2>Unit Test Suite Verification</h2>
+    <pre>[*] Running Test Suite: Data Science Fundamentals...
+  [PASS] Test Mean: Passed
+  [PASS] Test Median: Passed
+  [PASS] Test Mode: Passed
+  [PASS] Test Variance & Std Dev: Passed
+  [PASS] Test Percentiles & IQR: Passed
+  [PASS] Test Outlier Detection: Passed
+  [PASS] Test Pearson Correlation: Passed
+  [PASS] Test Bayes' Theorem: Passed
+  [PASS] Test Schema Parsing: Passed
+
+==========================================
+ ALL 9 UNIT TESTS PASSED SUCCESSFULLY!
+==========================================</pre>
+
+</body>
+</html>
