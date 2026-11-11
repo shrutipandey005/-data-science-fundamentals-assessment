@@ -1,75 +1,65 @@
 # Data Science Fundamentals Assessment
 
-[![CI](https://github.com/<your-username>/data-science-fundamentals-assessment/actions/workflows/ci.yml/badge.svg)](https://github.com/<your-username>/data-science-fundamentals-assessment)
-[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Tests: 9 Passed](https://img.shields.io/badge/unit_tests-9_passed-brightgreen.svg)](src/test_fundamentals.py)
+This is a Python-based project I made to practise and understand some basic concepts of Data Science. It covers statistical calculations, data analysis, and working with different types of data.
 
-A production-grade, end-to-end Data Science Fundamentals assessment repository demonstrating foundational data science methodology, rigorous Python programming, pure-Python statistical algorithms, feature representations, best practices, and real-world analytical assignments.
+The main aim of this project was to apply the concepts practically instead of just learning them theoretically.
 
----
+## About the Project
 
-## GitHub Project Setup & Repository URL
+The project includes different tasks related to statistics and data handling. It uses Python to perform calculations, analyse a customer dataset, process order details, and test the results.
 
-### 1. GitHub Project URL Format
-```text
-https://github.com/<your-username>/data-science-fundamentals-assessment
-```
+## Features
 
-### 2. Push this Project to GitHub (Step-by-Step)
-To publish this project to your GitHub account:
+Some of the main things covered in this project are:
 
-```bash
-# 1. Open terminal in the project directory:
-cd C:\Users\User\.gemini\antigravity\scratch\data_science_fundamentals_assessment
+- **Statistical Calculations:** Mean, median, mode, variance, and standard deviation.
+- **Data Analysis:** Finding percentiles, IQR, and detecting outliers.
+- **Correlation:** Using Pearson correlation to understand relationships between variables.
+- **Bayes' Theorem:** Applying basic probability concepts.
+- **Customer Churn Analysis:** Analysing customer records and calculating the churn percentage.
+- **JSON Processing:** Reading order data and calculating total net revenue.
+- **Schema Parsing:** Working with structured data.
+- **Unit Testing:** Checking whether the different functions give the expected results.
 
-# 2. Initialize Git (if not yet initialized):
-git init
-git branch -M main
+## Technologies Used
 
-# 3. Stage and commit all assessment code, notebooks, and reports:
-git add .
-git commit -m "feat: complete comprehensive data science fundamentals assessment"
+- Python
+- Jupyter Notebook
+- CSV
+- JSON
 
-# 4. Create a new repository named 'data-science-fundamentals-assessment' on GitHub:
-#    Navigate to: https://github.com/new
+## Project Results
 
-# 5. Connect and push your code:
-git remote add origin https://github.com/<your-username>/data-science-fundamentals-assessment.git
-git push -u origin main
-```
+The project was tested successfully, and all 9 unit tests passed.
 
-*(Note: If Git is not yet installed on your machine, install it in one command: `winget install --id Git.Git -e --source winget`)*
+A few results from the assessment:
 
----
+- Customer records analysed: 20
+- Customer churn rate: 35%
+- Orders processed: 4
+- Net revenue calculated: $1,730.64
+- All 6 assessment objectives passed.
 
-## One-Click Execution (Go to Run)
+## How to Run the Project
 
-The project has zero required third-party dependencies — it runs out of the box using Python's standard library.
+If you want to run this project on your computer:
 
-### Option 1: Double-Click or Command Line (Windows Batch)
-```cmd
-run_project.bat
-```
+1. Clone this repository or download the project.
+2. Open the project folder in VS Code.
+3. Open the terminal.
+4. Run the following command:
 
-### Option 2: PowerShell
-```powershell
-powershell -ExecutionPolicy Bypass -File .\run_project.ps1
-```
-
-### Option 3: Cross-Platform Python CLI
 ```bash
 python run.py
 ```
 
-### Option 4: Run Direct Assessment & Tests
-```bash
-# Run unit tests (9 test cases verifying statistical algorithms)
-python src/test_fundamentals.py
+The program will execute the assessment tasks and display the results in the terminal.
 
-# Run master assessment engine
-python src/fundamentals_assessment.py
-```
+## What I Learned
+
+While working on this project, I got a better understanding of how Python can be used for basic data analysis and statistical operations. I also got some practical experience with CSV and JSON files, writing test cases, and organising a Python project.
+
+This project helped me connect some of the concepts I had learned with actual implementation.
 
 ---
 
@@ -189,3 +179,7 @@ data_science_fundamentals_assessment/
  ALL 9 UNIT TESTS PASSED SUCCESSFULLY!
 ==========================================
 ```
+
+---
+**Project:** Data Science Fundamentals Assessment  
+**Language:** Python 3.10+
