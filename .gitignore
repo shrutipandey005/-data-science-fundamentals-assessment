@@ -43,6 +43,11 @@ venv.bak/
 *.swp
 *.swo
 
+# Document reports (local submission files excluded from Git)
+*.docx
+*.doc
+gcm-diagnose.log
+
 # OS generated
 .DS_Store
 Thumbs.db

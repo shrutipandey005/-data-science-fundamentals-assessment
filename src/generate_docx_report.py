@@ -1197,3 +1197,4 @@ def generate_full_docx_report():
 
 if __name__ == "__main__":
     generate_full_docx_report()
+
